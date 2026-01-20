@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue';
+  color: white;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --x: 50%;
+  --y: 50%;
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1653046858247-0b861eec1b40?q=80&w=1170&auto=format&fit=crop)
+    no-repeat center / cover;
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(
+    150px at var(--x) var(--y),
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
